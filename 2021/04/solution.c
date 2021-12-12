@@ -44,11 +44,10 @@ int main() {
 void blotBoards(int n) {
 	int i, j, k;
 	for (i = 0; i < 100; i++)
-		for (j = 0; j < 5; j++)
-			for (k = 0; k < 5; k++)
-				if (boards[i][j][k] == n)
-					boards[i][j][k] = -1;
-
+	for (j = 0; j < 5; j++)
+	for (k = 0; k < 5; k++)
+		if (boards[i][j][k] == n)
+			boards[i][j][k] = -1;
 }
 
 int checkBoards() {
@@ -79,7 +78,6 @@ int checkBoards() {
 		}
 		if (found != -1) break;
 	}
-
 
 	return found;
 }
